@@ -9,12 +9,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-route.js"></script>
-    <!--
-    <link href="assets/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <script src="assets/lib/bootstrap/bootstrap.min.js"></script>
-    <script src="assets/lib/jquery/jquery-3.3.1.min.js"></script>
-    <script src="assets/lib/angularjs/angular.min.js"></script>
-    -->
     <link href="assets/css/tables.css" rel="stylesheet">
     <link href="assets/css/sidebar.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">

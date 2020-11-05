@@ -14,7 +14,7 @@ $lname = $_SESSION['lastname'];
 include('initapi.php');
 
 if (!isset($_GET['code'])) {
-    header('Location: register.php');
+	header('Location: register.php');
 }
 
 // Request a access token using the code from Spotify
@@ -30,17 +30,17 @@ $sql = "INSERT INTO usertable (username, firstname, lastname, password, email, s
 VALUES ('$username', '$fname', '$lname', '$psw', '$email', '$id', '$refreshToken', '$accessToken')";
 
 if (mysqli_query($conn, $sql)) {
-    session_reset();
-    echo "success";
-    $_SESSION['actUser'] = $username;
-    $_SESSION['passUser'] = $psw;
-    $_SESSION['accesstoken'] = $accessToken;
-    $_SESSION['state'] = true;
+	session_reset();
+	echo "success";
+	$_SESSION['actUser'] = $username;
+	$_SESSION['passUser'] = $psw;
+	$_SESSION['accesstoken'] = $accessToken;
+	$_SESSION['state'] = true;
 
-    header('Location: songable.php#!/overall');
+	header('Location: songable.php#!/overall');
 } else {
-    echo "Error that account is already linked";
-    header('Location: register.php');
+	echo "Error that account is already linked";
+	header('Location: register.php');
 }
 
 die();

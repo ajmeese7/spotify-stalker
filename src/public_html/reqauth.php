@@ -9,15 +9,16 @@ $session = new SpotifyWebAPI\Session(
 );
 
 $options = [
-    'scope' => [
-        'playlist-read-private',
-        'user-read-private',
-        'user-library-read',
-        'user-top-read',
-        'user-read-recently-played'
-    ],
+	'scope' => [
+		'playlist-read-private',
+		'user-read-private',
+		'user-library-read',
+		'user-top-read',
+		'user-read-recently-played'
+	],
 ];
 
 header('Location: ' . $session->getAuthorizeUrl($options) . '&show_dialog=true');
 die();
 
+?>

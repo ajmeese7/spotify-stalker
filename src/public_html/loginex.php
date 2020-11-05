@@ -11,9 +11,9 @@ $sql = mysqli_query($conn, "SELECT * FROM `usertable` WHERE username = '$usernam
 $rows = mysqli_num_rows($sql);
 
 if ($rows == 1) {
-    $_SESSION['actUser'] = $username;
-    $_SESSION['passUser'] = $password;
-    $_SESSION['state'] = true;
+	$_SESSION['actUser'] = $username;
+	$_SESSION['passUser'] = $password;
+	$_SESSION['state'] = true;
 
     $api = new SpotifyWebAPI\SpotifyWebAPI();
     $session = new SpotifyWebAPI\Session(
@@ -23,6 +23,6 @@ if ($rows == 1) {
     );
     include('tokenrefresh.php');
 } else {
-    echo 'error';
-    header('Location: login.php');
+	echo 'error';
+	header('Location: login.php');
 }
