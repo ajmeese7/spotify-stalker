@@ -53,7 +53,7 @@
                                         <input name="password" placeholder="Set a Password" type="password" required autocomplete="off"/>
                                     </div>
                                     <button type="submit" class="button button-block">Get Started</button>
-                                    <p id="login"><a href="http://stalkify.me/login.php">Log in?</a></p>
+                                    <p id="login"><a href="login.php">Log in?</a></p>
                                 </form>
                             </div>
                         </div> <!-- /form -->
